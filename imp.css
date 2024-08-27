@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: red 1px solid;*/
+}
+.landing-page{
+    background-image: url("landp.JPEG");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+ }
+ header{
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     width: 100%;
+     color: white;
+     height: 68px;
+     background-color: rgba(112, 46, 178, 0.2);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     padding: 16px;
+     z-index: 1000;
+ }
+ .logo{
+     display: flex;
+     gap: 20px;
+     align-items: center;
+ }
+ .logopic{
+     height: 39.16px;
+     width: 41.26px;
+ }
+ .logoname{
+     font-weight: 700;
+     font-family: sans-serif;
+ }
+ @media all and (max-width:830px) {
+    
+    .logopic{
+        width: 22px;
+        aspect-ratio: 1;
+    }
+    .logoname{
+        font-weight: 400;
+        font-size: 16px;
+       
+    }
+   
+
+    .left-header > ul > li:nth-child(1){
+      display: none;
+        
+        }
+    .left-header > ul > li:nth-child(2){
+      display: none;
+        
+        }
+    .left-header > ul > li:nth-child(3){
+      display: none;
+        
+        }
+    .left-header > ul > li:nth-child(4 ){
+      display: none;
+        
+        }
+   
+  }
+
+  @media all and (max-width:500px) {
+    .logoname{
+        font-weight: 400;
+        font-size: 10px;
+       
+    }
+    .left-header > ul > li:nth-child(5){
+       font-size: 15px;
+    
+    }
+}
+  
+ .left-header > ul {
+    display: flex;
+ list-style-type:none;
+ align-items: center;
+
+
+ font-weight: 800 ;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+li > .picc{
+ width: 36px;
+ aspect-ratio: 1;
+ border-radius: 50%;
+ border: solid white 1px;
+
+
+}
+
+.left-header > ul > li:nth-child(1){
+border-radius: 4px;
+background-color:  rgba(247, 130, 35, 1);
+
+}
+.left-header > ul > li:nth-child(1):hover{
+    color: rgb(255, 210, 168);
+    transform: scale(1);
+
+}
+
+
+
+.left-header > ul > li{
+padding: 6px;
+margin-left: 8px;
+transition: all .4s;
+} 
+.left-header > ul > li:hover{
+    color: rgb(241, 125, 10);
+    transform: scale(1.1);  
+}
+
+menu{
+    display: flex;
+    background-color:rgba(250, 250, 250, 0.63) ;
+    border-radius: 10px;
+    width: 238px;
+    height: 54px;
+    top: 74px;
+    left: 71px;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+   
+
+
+}
+.right-menu{
+border: solid 1px  rgba(112, 46, 178, 0.6);
+border-radius: 8px ;
+background-color: rgba(255, 255, 255, 1);
+height: 23px;
+width: 50px;
+font-size: x-small;
+font-weight: 600;
+text-align: center;
+transition: all .9s;
+}
+.right-menu:hover{
+transform: scaleX(0.9);
+}
+.search-item > input{
+width: 128px;
+height: 24.27px;
+border-radius: 7px;
+font-size: smaller;
+padding: 4px;
+outline: none;
+border: solid 1px rgba(112, 46, 178, 0.6);
+transition: all 1s ;
+}
+.search-item > input:focus{
+border: solid 1.8px rgba(65, 3, 77, 0.6);
+transform: scaleX(1.1);
+}
+
+.search-item > input::placeholder{
+font-size: smaller;
+text-align: center;
+}
+.arrow > #angle-down{
+transition: all 1s;
+font-size: x-large;
+}
+.arrow > #angle-down:hover{
+transform: translateY(10px);
+}
+.arrow > #angle-up{
+transition: all 1s;
+font-size: x-large;
+}
+.arrow > #angle-up:hover{
+transform: translateY(-10px);
+}
+
+
+.open-menu{
+    width: 239px;
+    height: 980px;
+    top: 137px;
+    left: 70px;
+    background: rgba(250, 250, 250, 1);position: relative;
+    border-radius:10px;
+    z-index: 1000;
+       
+   
+
+}
+
+.main-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+}
+
+.first-list{
+    padding: 9px;
+}
+
+.first-list > .up-list{
+    display: flex;
+    color: black;
+   text-decoration: none;
+   gap: 8px;
+   font-size: 16px;
+   font-weight: 600;
+   margin-bottom: px;
+   padding-left: 6px;
+}
+
+.categories ul > li,a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+   font-weight: 600;
+   padding-left: 5px;
+   margin-bottom: 3px;
+}
+.discovery li{
+   list-style-type: none;
+
+}
+.discovery{
+    padding-top: 20px;
+ 
+}
+
+.open-menu{
+    display: none;
+}
+
+.flag select{
+    position: fixed;
+    top: 80px;
+    right: 5%;
+    z-index: 1000;
+   
+  
+    
+}
+.sec-lay-left{
+    width: 500px;
+height: auto;
+background-color: white;
+border-radius: 21.2px ;
+border: 0.85px solid black;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 8px;
+font-weight: bold;
+
+}
+
+.one{
+border-right: solid 1px black ;
+padding: 6px;
+}
+.two{
+border-right: solid 1px black ;
+padding: 6px;
+}
+.three{
+    padding: 6px;
+}
+.second-layer{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    align-items: flex-start;
+   flex-wrap: wrap-reverse;
+   position: absolute;
+   top: 290px;
+   padding: 30px;
+   
+  
+}
+.second-layer img{
+     background-color: rgb(194, 165, 194);
+     width: 400px;
+    
+    
+}
+.second-side{
+     background-color: rgb(194, 165, 194);
+     width: 450px;
+     border: solid 1px black;
+     border-radius: 6px;
+     font-size: x-small;
+     font-weight: 900;
+}
+.colors{
+    display: flex;
+  gap: 3px;
+}
+.red{
+    background-color: red;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 16px;
+    aspect-ratio: 1;
+}
+.white{
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 16px;
+    aspect-ratio: 1;
+}
+.green{
+    background-color: green;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 16px;
+    aspect-ratio: 1;
+}
+.second-img{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+.sec-lay-right{
+    border:  1px solid black;
+    border-radius: 6px;
+    padding: 4px;
+    background-color: white;
+}
+
+@media all and (max-width:900px) {
+.second-side{
+width: 300px;
+}
+.second-side img{
+    width: 290px;
+}
+
+.sec-lay-left{
+    width: 300px;
+    height: auto;
+
+
+}
+
+}
+
+
+

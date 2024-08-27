@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Infinity Market Place</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="imp.css">
+    <script src="jquery.js"></script>
+    <script src="imp.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+.third{
+    display: flex;
+    justify-content: center;
+}
+.third-layer{
+    height: 73vh;
+    width: 96%;
+    background-color: rgb(207, 44, 44);
+    position: relative;
+    top: 260px;
+    padding-top: 6px;
+    border-radius: 4px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+   
+}
+
+@media all and (max-width:800px) {
+.third-layer{
+    top: 610px;
+}
+
+
+}
+
+
+
+
+.flash-view{
+    background: white;
+    display: flex;
+    margin: 4px;
+    justify-content: space-between;
+    padding: 4px;
+    font-size: bold;
+    font-weight: 600;
+    border-radius: 2px;
+    margin-bottom: 16px;
+   
+}
+
+.flash-sales-items .items{
+    background-color: rgb(253, 201, 201);
+    height: auto;
+    width: 320px;
+    border-radius: 24px;
+    padding: px;
+}
+.pro-pic img{
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+.name-pro-pic{
+    display: flex;
+    gap: 8px;
+    font-size: xx-small;
+    align-items: center;
+    padding: 2px;
+}
+.company-name{
+    display: flex;
+    justify-content: space-between;
+    padding: 9px;
+}
+.flash-img img{
+   width: 100%;
+}
+.hold-all-items{
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    gap: 16px;
+   
+   
+   z-index: 100;
+  
+    
+}
+
+.flash-sales-items{
+    animation-name: moveitems;
+   animation-timing-function: ease-in;
+   animation-duration: 50s;
+   animation-direction: normal;
+   animation-iteration-count: infinite;
+   transition: all ease-in ;
+   
+    
+  
+  
+ 
+}
+.hold-all-items::-webkit-scrollbar{
+  display: none;
+}
+/*
+@keyframes  moveitems{
+        
+        0%{
+     
+      visibility: hidden;
+        }
+        1%{
+      transform: translateX(2000px) ;
+      transition: all ease-in;
+      visibility: visible;
+        }
+        2%{
+      transform: translateX(2000px) ;
+      transition: all ease-in;
+      visibility: visible;
+        }
+        
+        10%{
+      transform: translateX(2000px) ;
+      transition: all ease-in;
+      display: inherit;
+        }
+        
+        90%{
+      visibility: hidden;
+        }
+       100%{
+    visibility: hidden;
+        }
+        
+       
+    }
+   */
+
+    </style>
+</head>
+<body>
+   
+    <div class="landing-page">
+<header>
+    <div class="logo"><div>
+        <img src="ICON WHITE.png"   class="logopic"></div> 
+        <div class="logoname">INFINITY MARKET PLACE</div>
+    </div>
+ 
+    <div class="left-header">
+        <ul>
+            <li>Home</li>
+            <li>Discovery</li>
+            <li>Sell</li>
+            <li>Cart</li>
+            <li>Log in/Sign up</li>
+            <li> <img class="picc" src="6215524e7d3b34c0af4a4ce51e1fd997.jpg" alt=""> </li>
+        </ul>
+    </div>
+</header>
+
+<div class="menu-and-flag">
+    <div>
+        
+<menu type="toolbar" class="menuu">
+    <div class="right-menu">menu</div>
+    <div class="arrow"><i class="fa fa-angle-down" aria-hidden="true" id="angle-down"></i></div>
+    <div class="search-item"><input type="text" placeholder=" type to search"></div>
+</menu>
+    </div>
+
+    <div class="flag">
+        <select name="" id="">
+            <option value="">NIGERIA</option>
+            <option value="">GHANA</option>
+            <option value="">AMERICA</option>
+            <option value="">SOUTH AFRICA</option>
+            <option value="">CANADA</option>
+            <option value="">MEXICO</option>
+            <option value="">RUSSIA</option>
+        </select>
+    </div>
+</div>
+
+
+                 <div class="open-menu">
+<div class="main-menu">
+    <div class="right-menu">menu</div>
+    <div class="arrow"><i class="fa fa-angle-up" aria-hidden="true" id="angle-up"></i></div>
+    <div class="search-item"><input type="text" placeholder=" type to search"></div>
+
+</div>
+    
+<div class="open-menu-list">
+    <div class="first-list">
+           <a class="up-list" href="#">
+            <div class="list-icon">
+            icon
+            </div>
+           <div class="list-name">
+               Top rated
+            </div>
+           </a>
+           <a class="up-list" href="#">
+            <div class="list-icon">
+            icon
+            </div>
+           <div class="list-name">
+               People's choice
+            </div>
+           </a>
+           <a class="up-list" href="#">
+            <div class="list-icon">
+            icon
+            </div>
+           <div class="list-name">
+               Top brands
+            </div>
+           </a>
+
+        </div>
+
+        <div class="categories">
+            <ul>
+               <li><a href="#"><h4>CATEGORIES</h4></a></li>
+               <li><a href="#">Wears</a></li>
+               <li><a href="#">Electronics</a></li>
+               <li><a href="#">Gadgets</a></li>
+               <li><a href="#">home decor</a></li>
+               <li><a href="#">Cosmetics</a></li>
+               <li><a href="#">Beauty & wash</a></li>
+              
+            </ul>
+        </div>
+
+        <div class="discovery">
+            <li><a href="#" id="dis">#DISCOVERY CONTENTS</a></li>
+            <li><a href="#">#Wears #Electronics</a></li>
+        </div>
+               
+        <div class="first-list" style="margin-top: 25px;">
+      
+            <a class="up-list" href="#">
+             <div class="list-icon">
+             icon
+             </div>
+            <div class="list-name">
+             Profile
+             </div>
+            </a>
+            <a class="up-list" href="#">
+             <div class="list-icon">
+             icon
+             </div>
+            <div class="list-name">
+                History
+             </div>
+            </a>
+ 
+         </div>
+        <div class="first-list" style="margin-top: 30px;">
+              <h6>INFO</h6>
+            <a class="up-list" href="#">
+             <div class="list-icon">
+             icon
+             </div>
+            <div class="list-name">
+            chat
+             </div>
+            </a>
+            <a class="up-list" href="#">
+             <div class="list-icon">
+             icon
+             </div>
+            <div class="list-name">
+                Notification
+             </div>
+            </a>
+ 
+         </div>
+
+         <div class="first-list" style="margin-top: 30px;">
+         <h6>ACCOUNT</h6>
+            <a class="up-list" href="#">
+             <div class="list-icon">
+             icon
+             </div>
+            <div class="list-name">
+           Switch Account
+             </div>
+            </a>
+            <a class="up-list" href="#">
+             <div class="list-icon">
+             icon
+             </div>
+            <div class="list-name">
+               Help
+             </div>
+            </a>
+ 
+         </div>
+         <div class="first-list" style="margin-top: 60px;">
+        
+            <a class="up-list" href="#">
+             <div class="list-icon">
+             icon
+             </div>
+            <div class="list-name">
+         Setting
+             </div>
+            </a>
+            <a class="up-list" href="#">
+             <div class="list-icon">
+             icon
+             </div>
+            <div class="list-name">
+            Logout
+             </div>
+            </a>
+ 
+         </div>
+</div>
+
+                </div>
+
+    </div>
+
+   <div class="second-layer">
+    <div class="sec-lay-left">
+        <div class="one">Free website for 
+            your business</div>
+      <div class="two">  Create your brand 
+        contents and upload
+         on discovery page</div>
+      <div class="three">Up your game with 
+        our premium service</div>
+    </div>
+    <div class="sec-lay-right">
+        <div class="second-img"> 
+            <div class="colors"><div class="red"></div> <div class="white"></div><div class="green"></div>
+        </div>
+            <div class="color-name"><h6>INFINITY MARKET PLACE</h6></div>
+        </div>
+        <div class="second-side">
+            "Craft your brand’s story with precision—
+where content, optimization, and trust converge
+ to drive success." 
+            <div> <img src="second-layer-images.png" > </div>
+        </div>
+    </div>
+   </div>
+    
+  <div class="third">
+    <div class="third-layer">
+        <div class="flash-view">
+            <div class="flash-sales">FLASH SALES</div>
+            <div class="view-all">VIEW ALL</div>
+        </div>
+
+      
+        <div class="hold-all-items">
+           
+            <div class="flash-sales-items">
+                <div class="items">
+                  <div class="flash-img"><img src="shoe.png"></div>
+                  <div class="product-name" style="font-size: medium; font-weight: 700; padding: 4px;">BROWN LEATHER BROGUES</div>
+                   <div class="name-pro-pic" ><div class="pro-pic"><img src="6215524e7d3b34c0af4a4ce51e1fd997.jpg" ></div>    <div class="seller-name">James akunmowa</div></div>
+                  <div class="company-name"> <div class="com-name" style="font-size: x-small ; font-weight: 700;">shop.leather work</div>    <div class="item-price" style="color: red; font-size: smaller ; font-weight: 500;">N 38,000 </div></div>
+                </div>
+              </div>
+              <div class="flash-sales-items">
+                <div class="items">
+                  <div class="flash-img"><img src="shoe.png"></div>
+                  <div class="product-name" style="font-size: medium; font-weight: 700; padding: 4px;">BROWN LEATHER BROGUES</div>
+                   <div class="name-pro-pic" ><div class="pro-pic"><img src="6215524e7d3b34c0af4a4ce51e1fd997.jpg" ></div>    <div class="seller-name">James akunmowa</div></div>
+                  <div class="company-name"> <div class="com-name" style="font-size: x-small ; font-weight: 700;">shop.leather work</div>    <div class="item-price" style="color: red; font-size: smaller ; font-weight: 500;">N 38,000 </div></div>
+                </div>
+              </div>
+              <div class="flash-sales-items">
+                <div class="items">
+                  <div class="flash-img"><img src="shoe.png"></div>
+                  <div class="product-name" style="font-size: medium; font-weight: 700; padding: 4px;">BROWN LEATHER BROGUES</div>
+                   <div class="name-pro-pic" ><div class="pro-pic"><img src="6215524e7d3b34c0af4a4ce51e1fd997.jpg" ></div>    <div class="seller-name">James akunmowa</div></div>
+                  <div class="company-name"> <div class="com-name" style="font-size: x-small ; font-weight: 700;">shop.leather work</div>    <div class="item-price" style="color: red; font-size: smaller ; font-weight: 500;">N 38,000 </div></div>
+                </div>
+              </div>
+              <div class="flash-sales-items">
+                <div class="items">
+                  <div class="flash-img"><img src="shoe.png"></div>
+                  <div class="product-name" style="font-size: medium; font-weight: 700; padding: 4px;">BROWN LEATHER BROGUES</div>
+                   <div class="name-pro-pic" ><div class="pro-pic"><img src="6215524e7d3b34c0af4a4ce51e1fd997.jpg" ></div>    <div class="seller-name">James akunmowa</div></div>
+                  <div class="company-name"> <div class="com-name" style="font-size: x-small ; font-weight: 700;">shop.leather work</div>    <div class="item-price" style="color: red; font-size: smaller ; font-weight: 500;">N 38,000 </div></div>
+                </div>
+              </div>
+              <div class="flash-sales-items">
+                <div class="items">
+                  <div class="flash-img"><img src="shoe.png"></div>
+                  <div class="product-name" style="font-size: medium; font-weight: 700; padding: 4px;">BROWN LEATHER BROGUES</div>
+                   <div class="name-pro-pic" ><div class="pro-pic"><img src="6215524e7d3b34c0af4a4ce51e1fd997.jpg" ></div>    <div class="seller-name">James akunmowa</div></div>
+                  <div class="company-name"> <div class="com-name" style="font-size: x-small ; font-weight: 700;">shop.leather work</div>    <div class="item-price" style="color: red; font-size: smaller ; font-weight: 500;">N 38,000 </div></div>
+                </div>
+              </div>
+              <div class="flash-sales-items">
+                <div class="items">
+                  <div class="flash-img"><img src="shoe.png"></div>
+                  <div class="product-name" style="font-size: medium; font-weight: 700; padding: 4px;">BROWN LEATHER BROGUES</div>
+                   <div class="name-pro-pic" ><div class="pro-pic"><img src="6215524e7d3b34c0af4a4ce51e1fd997.jpg" ></div>    <div class="seller-name">James akunmowa</div></div>
+                  <div class="company-name"> <div class="com-name" style="font-size: x-small ; font-weight: 700;">shop.leather work</div>    <div class="item-price" style="color: red; font-size: smaller ; font-weight: 500;">N 38,000 </div></div>
+                </div>
+              </div>
+              <div class="flash-sales-items">
+                <div class="items">
+                  <div class="flash-img"><img src="shoe.png"></div>
+                  <div class="product-name" style="font-size: medium; font-weight: 700; padding: 4px;">BROWN LEATHER BROGUES</div>
+                   <div class="name-pro-pic" ><div class="pro-pic"><img src="6215524e7d3b34c0af4a4ce51e1fd997.jpg" ></div>    <div class="seller-name">James akunmowa</div></div>
+                  <div class="company-name"> <div class="com-name" style="font-size: x-small ; font-weight: 700;">shop.leather work</div>    <div class="item-price" style="color: red; font-size: smaller ; font-weight: 500;">N 38,000 </div></div>
+                </div>
+              </div>
+              <div class="flash-sales-items">
+                <div class="items">
+                  <div class="flash-img"><img src="shoe.png"></div>
+                  <div class="product-name" style="font-size: medium; font-weight: 700; padding: 4px;">BROWN LEATHER BROGUES</div>
+                   <div class="name-pro-pic" ><div class="pro-pic"><img src="6215524e7d3b34c0af4a4ce51e1fd997.jpg" ></div>    <div class="seller-name">James akunmowa</div></div>
+                  <div class="company-name"> <div class="com-name" style="font-size: x-small ; font-weight: 700;">shop.leather work</div>    <div class="item-price" style="color: red; font-size: smaller ; font-weight: 500;">N 38,000 </div></div>
+                </div>
+              </div>
+              <div class="flash-sales-items">
+                <div class="items">
+                  <div class="flash-img"><img src="shoe.png"></div>
+                  <div class="product-name" style="font-size: medium; font-weight: 700; padding: 4px;">BROWN LEATHER BROGUES</div>
+                   <div class="name-pro-pic" ><div class="pro-pic"><img src="6215524e7d3b34c0af4a4ce51e1fd997.jpg" ></div>    <div class="seller-name">James akunmowa</div></div>
+                  <div class="company-name"> <div class="com-name" style="font-size: x-small ; font-weight: 700;">shop.leather work</div>    <div class="item-price" style="color: red; font-size: smaller ; font-weight: 500;">N 38,000 </div></div>
+                </div>
+              </div>
+              <div class="flash-sales-items">
+                <div class="items">
+                  <div class="flash-img"><img src="shoe.png"></div>
+                  <div class="product-name" style="font-size: medium; font-weight: 700; padding: 4px;">BROWN LEATHER BROGUES</div>
+                   <div class="name-pro-pic" ><div class="pro-pic"><img src="6215524e7d3b34c0af4a4ce51e1fd997.jpg" ></div>    <div class="seller-name">James akunmowa</div></div>
+                  <div class="company-name"> <div class="com-name" style="font-size: x-small ; font-weight: 700;">shop.leather work</div>    <div class="item-price" style="color: red; font-size: smaller ; font-weight: 500;">N 38,000 </div></div>
+                </div>
+              </div>
+              <div class="flash-sales-items">
+                <div class="items">
+                  <div class="flash-img"><img src="shoe.png"></div>
+                  <div class="product-name" style="font-size: medium; font-weight: 700; padding: 4px;">BROWN LEATHER BROGUES</div>
+                   <div class="name-pro-pic" ><div class="pro-pic"><img src="6215524e7d3b34c0af4a4ce51e1fd997.jpg" ></div>    <div class="seller-name">James akunmowa</div></div>
+                  <div class="company-name"> <div class="com-name" style="font-size: x-small ; font-weight: 700;">shop.leather work</div>    <div class="item-price" style="color: red; font-size: smaller ; font-weight: 500;">N 38,000 </div></div>
+                </div>
+              </div>
+              <div class="flash-sales-items">
+                <div class="items">
+                  <div class="flash-img"><img src="shoe.png"></div>
+                  <div class="product-name" style="font-size: medium; font-weight: 700; padding: 4px;">BROWN LEATHER BROGUES</div>
+                   <div class="name-pro-pic" ><div class="pro-pic"><img src="6215524e7d3b34c0af4a4ce51e1fd997.jpg" ></div>    <div class="seller-name">James akunmowa</div></div>
+                  <div class="company-name"> <div class="com-name" style="font-size: x-small ; font-weight: 700;">shop.leather work</div>    <div class="item-price" style="color: red; font-size: smaller ; font-weight: 500;">N 38,000 </div></div>
+                </div>
+              </div>
+              <div class="flash-sales-items">
+                <div class="items">
+                  <div class="flash-img"><img src="shoe.png"></div>
+                  <div class="product-name" style="font-size: medium; font-weight: 700; padding: 4px;">BROWN LEATHER BROGUES</div>
+                   <div class="name-pro-pic" ><div class="pro-pic"><img src="6215524e7d3b34c0af4a4ce51e1fd997.jpg" ></div>    <div class="seller-name">James akunmowa</div></div>
+                  <div class="company-name"> <div class="com-name" style="font-size: x-small ; font-weight: 700;">shop.leather work</div>    <div class="item-price" style="color: red; font-size: smaller ; font-weight: 500;">N 38,000 </div></div>
+                </div>
+              </div>
+              <div class="flash-sales-items">
+                <div class="items">
+                  <div class="flash-img"><img src="shoe.png"></div>
+                  <div class="product-name" style="font-size: medium; font-weight: 700; padding: 4px;">BROWN LEATHER BROGUES</div>
+                   <div class="name-pro-pic" ><div class="pro-pic"><img src="6215524e7d3b34c0af4a4ce51e1fd997.jpg" ></div>    <div class="seller-name">James akunmowa</div></div>
+                  <div class="company-name"> <div class="com-name" style="font-size: x-small ; font-weight: 700;">shop.leather work</div>    <div class="item-price" style="color: red; font-size: smaller ; font-weight: 500;">N 38,000 </div></div>
+                </div>
+              </div>
+            
+             </div>
+     
+    
+      <div class="show-point"></div>
+      </div>
+      <div class="in">
+
+      </div>
+  </div>
+</body>
+</html>
